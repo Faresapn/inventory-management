@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Inventaris-Ontrucks</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Account</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_laptop">Laptop</string>
+    <string name="menu_printer">Printer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_info">About Us</string>
+    <string name="menu_logout">Logout</string>
+    <string name="laptop">Laptop</string>
+    <string name="printer">Printer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_loading">Loading</string>
+    <string name="uploadImages">Set your image</string>
+    <string name="msg_success">Successful</string>
+    <string name="msg_success_delete">Data Berhasil Di Hapus</string>
+    <string name="msg_error">Error! not successful</string>
+    <string name="msg_error1">Error!</string>
+    <string name="placeholder_nama">Select Employe</string>
+    <string name="item_management">Item Management</string>
+    <string name="divisi">Divisi</string>
+    <string name="empty">Empty</string>
+    <string name="profile">Profile</string>
+    <string name="select_employe">Select Employe</string>
+    <string name="denied">Permission Denied</string>
+    <string name="add_pdf_file">Add PDF File</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="label_create_laptop">Create Laptop</string>
+    <string name="label_update_laptop">Update Laptop</string>
+    <string name="content_add_employee">Add Employee</string>
+    <string name="type">Type</string>
+    <string name="operating_system">Operating System</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="inventory_code">Inventory Code</string>
+    <string name="select_pdf">Select PDF file</string>
+    <string name="empty_pdf">PDF File Can\'t be Empty</string>
+    <string name="problem_pdf">Problem uploading file</string>
+    <string name="failure_pdf">Failure uploading file</string>
+    <string name="problem_employee">Please select Employee</string>
+    <string name="msg_duplicate">Error! The name has already been taken</string>
+    <string name="remove_pdf">Remove PDF</string>
+
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <activity
+        android:id="@+id/act_login"
+        android:name="com.faresa.inventaris_ontrucks.activity.LoginActivity"
+        android:label="Login"
+        tools:layout="@layout/activity_login">
+
+    </activity>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.faresa.inventaris_ontrucks.ui.home.FragmentHome"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_divisi"
+            app:destination="@id/nav_divisi"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_item_to_nav_laptop"
+            app:destination="@id/nav_laptop"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_printer"
+            app:destination="@id/nav_printer"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_divisi"
+        android:name="com.faresa.inventaris_ontrucks.ui.divisi.DivisiFragment"
+        android:label="Divisi"
+        tools:layout="@layout/fragment_divisi" />
+
+    <fragment
+        android:id="@+id/nav_pegawai"
+        android:name="com.faresa.inventaris_ontrucks.ui.pegawai.PegawaiFragment"
+        android:label="Pegawai"
+        tools:layout="@layout/fragment_pegawai" />
+
+
+    <fragment
+        android:id="@+id/nav_printer"
+        android:name="com.faresa.inventaris_ontrucks.ui.Printer.PrinterFragment"
+        android:label="Printer"
+        tools:layout="@layout/fragment_printer" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.faresa.inventaris_ontrucks.ui.profile.ProfileFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_nav_profile_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.faresa.inventaris_ontrucks.ui.share.ShareFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.faresa.inventaris_ontrucks.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_send">
+
+        <action
+            android:id="@+id/action_nav_logout_to_act_login"
+            app:destination="@id/act_login"
+            app:popUpTo="@layout/activity_login" />
+        <action
+            android:id="@+id/action_nav_logout_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_laptop"
+        android:name="com.faresa.inventaris_ontrucks.ui.laptop.LaptopFragment"
+        android:label="Laptop"
+        tools:layout="@layout/fragment_laptop">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_item"
+        android:name="com.faresa.inventaris_ontrucks.ui.ItemFragment"
+        android:label="Item"
+        tools:layout="@layout/fragment_item">
+
+        <action
+            android:id="@+id/action_nav_item_to_nav_laptop"
+            app:destination="@id/nav_laptop"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_printer"
+            app:destination="@id/nav_printer"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

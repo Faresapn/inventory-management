@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.faresa.inventaris_ontrucks">
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:configChanges="orientation|screenSize"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.laptop.detail.PdfDetail"></activity>
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.laptop.PickEmploye.PickEmployeActivity" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.laptop.UpdateLaptopActivity" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.laptop.CreateLaptopActivity" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.divisi.DivisiEdit" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.pegawai.EditPegawai" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.pegawai.PegawaiCreate" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.Printer.detail.PdfPrinter"></activity>
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.Printer.detail.DetailPrinter" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.Printer.EditPrinter" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.Printer.PrinterCreate" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.divisi.DivisiCreate" />
+        <activity android:name="com.faresa.inventaris_ontrucks.ui.laptop.detail.DetailLaptop" />
+        <activity
+            android:name="com.faresa.inventaris_ontrucks.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.faresa.inventaris_ontrucks.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+</manifest>
